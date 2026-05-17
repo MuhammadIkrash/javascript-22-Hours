@@ -121,9 +121,23 @@ console.log(Math.round((2095+799)*0.1)/100);
 
 //                                      <====================================>
 
-
 // Math.ceil() - rounds a number up to the next largest integer
+
+console.log(Math.ceil('2.8')); // 3
+
+// The Math.ceil() method in JavaScript rounds a number up to the next largest integer (or smallest integer greater than or equal to the number). As a static method of the Math object, it is always used as Math.ceil(x) rather than on a created object, returning the same value as -Math.floor(-x)
+
+//                                      <====================================>
+
 // Math.floor() - rounds a number down to the next smallest integer
+
+console.log(Math.floor('2.32'));
+
+// The Math.floor() static method in JavaScript rounds a number down to the nearest integer, returning the largest integer less than or equal to the input. It operates on both positive and negative numbers by shifting them toward negative infinity, ensuring they are rounded down.
+
+//                                      <====================================>
+
+
 // Math.random() - generates a random number between 0 and 1
 // Math.max() - returns the largest of zero or more numbers
 // Math.min() - returns the smallest of zero or more numbers
