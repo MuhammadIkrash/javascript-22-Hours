@@ -77,23 +77,23 @@ let burgerPrice = 8;
 let burgerQuantity = 3;
 let iceCreamPrice = 5;
 let iceCreamQuantity = 1;
-let totalOrderPrice = ((soupPrice*soupQuantity)+(burgerPrice*burgerQuantity)+(iceCreamPrice*iceCreamQuantity));
-console.log(totalOrderPrice); 
+let totalOrderPrice = ((soupPrice * soupQuantity) + (burgerPrice * burgerQuantity) + (iceCreamPrice * iceCreamQuantity));
+console.log(totalOrderPrice);
 
 //                                      <====================================>
 // Exercise 5: Calculate the Total Price of Orders 
 
-console.log(18.50+(7.50*2)); // 33.50
+console.log(18.50 + (7.50 * 2)); // 33.50
 
 //                                      <====================================>
 // exercise 6: Calculate the Total Price of Orders with 10% Tax
 
-console.log(18.50+(7.50*2))*0.1; // 3.35
+console.log(18.50 + (7.50 * 2)) * 0.1; // 3.35
 //                                      <====================================>
 
 // Exercise 7: Calculate the Total Price of Orders with 20% Tax
 
-console.log(18.50+(7.50*2))*0.2; // 6.70
+console.log(18.50 + (7.50 * 2)) * 0.2; // 6.70
 
 //                                      <====================================>
 
@@ -101,14 +101,14 @@ console.log(18.50+(7.50*2))*0.2; // 6.70
 
 console.log(10 / 100); // 0.1 
 // To find the percentage of a number, you can multiply the number by the percentage (as a decimal). For example, to find 20% of 50, you would do:
-console.log(20/50); // 0.4
+console.log(20 / 50); // 0.4
 console.log(0.4 * 100); // 40%
 
 //                                      <====================================>
 
 //  converting Cents to Dollars
 
-console.log((2095+799)/100); // 28.94
+console.log((2095 + 799) / 100); // 28.94
 // for example, if you have a price in cents and you want to convert it to dollars, you can divide the price by 100. For example, if you have a price of 2095 cents and 799 cents, you can convert it to dollars like this:
 
 //                                      <====================================>
@@ -117,7 +117,7 @@ console.log((2095+799)/100); // 28.94
 // above are the basic math operations, but the Math object has many more methods that can be used for various purposes. like:
 // Math.round() - rounds a number to the nearest integer
 
-console.log(Math.round((2095+799)*0.1)/100); 
+console.log(Math.round((2095 + 799) * 0.1) / 100);
 
 //                                      <====================================>
 
@@ -131,7 +131,7 @@ console.log(Math.ceil('2.8')); // 3
 
 // Math.floor() - rounds a number down to the next smallest integer
 
-console.log(Math.floor('2.32'));
+console.log(Math.floor('2.32')); // 2
 
 // The Math.floor() static method in JavaScript rounds a number down to the nearest integer, returning the largest integer less than or equal to the input. It operates on both positive and negative numbers by shifting them toward negative infinity, ensuring they are rounded down.
 
@@ -139,5 +139,29 @@ console.log(Math.floor('2.32'));
 
 
 // Math.random() - generates a random number between 0 and 1
+
+console.log(Math.random()); // 0.7434325954947683
+
+// Math.random() - generates a random number between 0 and 1
+
+// if You Want Generate Your Own random numbers ; Follow This Steps
+
+console.log(Math.round(Math.random() * 6)) // Now You get Random Number Between 0 to 6
+
+// Problem : some Time We does not use 0 Like in Roll Dies . So For avoiding 0 we Multiple Math.random() with less Than 1 Number We want And Plus 1 . 
+
+console.log(Math.round(Math.random() * 5 + 1)) // Now You get Random Number Between 1 to 6 
+
+//                                      <====================================>
+
 // Math.max() - returns the largest of zero or more numbers
-// Math.min() - returns the smallest of zero or more numbers
+console.log(Math.max(0.2, 0,1,0.3)); // 1
+
+//                                      <====================================>
+
+
+// Math.min() - returns the smallest of zero or more numbers\\\
+
+console.log(Math.min(0.2, 0,1,0.3)); // 0
+
+//                                      <====================================>
