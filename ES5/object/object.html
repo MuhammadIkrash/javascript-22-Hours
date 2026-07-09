@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button
+      onclick="
+        let ran = Math.round(Math.random() * 2 + 1);
+        if (ran == 1) {
+          alert('You Win ; Rock beats  Scissor');
+        } else if (ran == 2) {
+          alert('You Lost ; Paper beats  Rock');
+        } else {
+          alert('Draw ; Both Select Rock');
+        }
+      "
+    >
+      Rock
+    </button>
+    <button
+      onclick="
+        let ran2 = Math.round(Math.random() * 2 + 1);
+        if (ran2 == 1) {
+          alert('You Lost ; Scissor beats  Paper');
+        } else if (ran2 == 2) {
+          alert('Draw ; Both Select Paper');
+        } else {
+          alert('You Win ; Paper beats  Rock');
+        }
+      "
+    >
+      Paper
+    </button>
+    <button
+      onclick="
+        let ran3 = Math.round(Math.random() * 2 + 1);
+        if (ran3 == 1) {
+          alert('Draw ; Both Select Scissor');
+        } else if (ran3 == 2) {
+          alert('You Win ; Scissor beats  Paper');
+        } else {
+          alert('You Lost ; Rock beats  Scissor');
+        }
+      "
+    >
+      Scissor
+    </button>
+  </body>
+  <script>
+    const pro = {
+      name: "Socks",
+      price: 1202,
+      arr: [123],
+      function() {
+        console.log(1);
+      },
+    };
+    pro.name = "haHo";
+    const convert = JSON.stringify(pro);
+    console.log(pro.name, pro.price);
+    console.log(convert);
+    const againConvert = JSON.parse(convert);
+    console.log(againConvert);
+    let store = localStorage.setItem("obj", againConvert);
+    let getStoreItem = localStorage.getItem("obj");
+    console.log(getStoreItem);
+    
+  </script>
+</html>

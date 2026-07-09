@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Todo List</p>
+    <input type="text" placeholder="Todo Names" class="todoVal" />
+    <button onclick="addTodo()">Add</button>
+  </body>
+  <script>
+    const todoList = [];
+    function addTodo() {
+      const inputElement = document.querySelector(".todoVal");
+      const inputVal = inputElement.value;
+      todoList.push(inputVal);
+      console.log(todoList);
+      inputElement.value = ''
+    }
+  </script>
+</html>
