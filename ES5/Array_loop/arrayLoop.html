@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    const num = [10, 20, 30];
+    num.splice(2, 1, 99);
+    // console.log(num);
+
+    function getLastValue(array) {
+      let lastValue = array[array.length - 1];
+      return lastValue;
+    }
+    // console.log(getLastValue(num));
+
+    const Num = [10, 20, 33, 43, 51];
+    function arraySwap(arrays) {
+      let f = arrays[0];
+      let l = arrays[arrays.length - 1];
+      let first = (arrays[0] = l);
+      let last = (arrays[arrays.length - 1] = f);
+      return arrays;
+    }
+    // console.log(arraySwap(Num));
+    for (let i = 0; i <= 10; i++) {
+      if (i % 2 == 0) {
+        // console.log(i);
+      }
+    }
+    for (let i = 5; i >= 0; i--) {
+      // console.log(i);
+    }
+    const Number = [11, 12, 13];
+    let newNum = [];
+    for (let i = 0; i < Number.length; i++) {
+      const element = Number[i] + 1;
+      newNum.push(element);
+    }
+    // console.log(newNum);
+    function addOne(Numbers) {
+      let addNew = [];
+      for (let i = 0; i < Numbers.length; i++) {
+        // const element = Numbers[i] + 1;
+        addNew.push(Numbers[i] + 1);
+      }
+      return addNew;
+    }
+    //  console.log(addOne(Number))
+    let Arr = [1, 2, 3, 4, 5];
+    let Numb = 5;
+    function addNum(array, num) {
+      let finArr = [];
+      for (let i = 0; i < array.length; i++) {
+        const element = array[i] + num;
+        finArr.push(element);
+      }
+      return finArr;
+    }
+    let final = addNum(Arr, Numb);
+    // console.log(final);
+
+    let Arr1 = [1, 2, 3, 4, 5];
+    let Arr2 = [2, 5, 3, 4, 5];
+    function addNum(Arr1, Arr2) {
+      let finArr = [];
+      for (let i = 0; i < Arr1.length; i++) {
+        const element = Arr1[i] + Arr2[i];
+        finArr.push(element);
+      }
+      return finArr;
+    }
+    let finalRes = addNum(Arr1, Arr2);
+    // console.log(finalRes);
+
+    let arrNag = [-1, 2, 3, -4, -6];
+    function findPositive(arrPos) {
+      let count = 0;
+      for (let i = 0; i < arrPos.length; i++) {
+        if (arrPos[i] > 0) {
+          count++;
+        }
+      }
+      return count;
+    }
+    // console.log(findPositive(arrNag));
+    const maxMin = [-1, 1, 2, 3];
+    function findMinMax(maxMin) {
+      let obj = {
+        min: [],
+        max: [],
+      };
+      for (let i = 0; i < maxMin.length; i++) {
+        if (maxMin[i] > maxMin[i]) {
+        console.log('ha');
+        }
+      }
+    }
+    findMinMax(maxMin);
+  </script>
+</html>
